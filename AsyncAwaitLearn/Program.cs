@@ -6,7 +6,7 @@ namespace AsyncAwaitLearn
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! GitHub actions");
+            Console.WriteLines("Hello World! GitHub actions");
         }
     }
 }
