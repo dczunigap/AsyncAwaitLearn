@@ -1,4 +1,6 @@
 ![.NET Core](https://github.com/dczunigap/AsyncAwaitLearn/workflows/.NET%20Core/badge.svg)
 
 # AsyncAwaitLearn
-Proyecto de aprendizaje para Async/Await en C#
+
+Este repositorio alberga un ejemplo sencillo de consola que imprime un saludo.
+El objetivo es sentar las bases para introducir ejemplos de Async/Await en el futuro.
