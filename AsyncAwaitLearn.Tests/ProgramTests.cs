@@ -30,6 +30,7 @@ namespace AsyncAwaitLearn.Tests
             var output = writer.ToString();
             Assert.Contains("Hello from async master!", output);
             Assert.Contains("Learning Async/Await step by step", output);
+            Assert.Contains("Master branch keeps async greetings fresh", output);
         }
     }
 }

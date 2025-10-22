@@ -2,7 +2,7 @@
 
 # AsyncAwaitLearn
 
-Este repositorio alberga un ejemplo sencillo de consola que imprime dos saludos de forma asíncrona para practicar Async/Await.
+Este repositorio alberga un ejemplo sencillo de consola que imprime tres saludos de forma asíncrona para practicar Async/Await.
 El objetivo es servir de punto de partida para futuros ejercicios.
 
 ## Requisitos

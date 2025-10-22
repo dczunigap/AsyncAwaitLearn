@@ -12,9 +12,18 @@ namespace AsyncAwaitLearn
 
         public static async Task PrintGreetingAsync()
         {
-            await Task.Delay(50);
-            await Console.Out.WriteLineAsync("Hello from async master!");
-            await Console.Out.WriteLineAsync("Learning Async/Await step by step");
+            var greetings = new[]
+            {
+                "Hello from async master!",
+                "Learning Async/Await step by step",
+                "Master branch keeps async greetings fresh"
+            };
+
+            foreach (var greeting in greetings)
+            {
+                await Console.Out.WriteLineAsync(greeting);
+                await Task.Delay(50);
+            }
         }
     }
 }
