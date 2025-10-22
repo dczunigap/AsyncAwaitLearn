@@ -1,12 +1,20 @@
-﻿using System;
+using System;
+using System.Threading.Tasks;
 
 namespace AsyncAwaitLearn
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            Console.WriteLines("Hello World! GitHub actions");
+            await PrintGreetingAsync();
+        }
+
+        public static async Task PrintGreetingAsync()
+        {
+            await Task.Delay(50);
+            await Console.Out.WriteLineAsync("Hello from async master!");
+            await Console.Out.WriteLineAsync("Learning Async/Await step by step");
         }
     }
 }
