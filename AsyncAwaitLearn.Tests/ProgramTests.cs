@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Threading.Tasks;
 using AsyncAwaitLearn;
 using Xunit;
 
@@ -8,7 +9,7 @@ namespace AsyncAwaitLearn.Tests
     public class ProgramTests
     {
         [Fact]
-        public void Main_WritesExpectedGreeting()
+        public async Task Main_WritesExpectedGreetingAsync()
         {
             // Arrange
             var originalOut = Console.Out;
@@ -18,7 +19,7 @@ namespace AsyncAwaitLearn.Tests
             try
             {
                 // Act
-                Program.Main(Array.Empty<string>());
+                await Program.Main(Array.Empty<string>());
             }
             finally
             {
@@ -27,7 +28,9 @@ namespace AsyncAwaitLearn.Tests
 
             // Assert
             var output = writer.ToString();
-            Assert.Contains("Hello World! GitHub actions", output);
+            Assert.Contains("Hello from async master!", output);
+            Assert.Contains("Learning Async/Await step by step", output);
+            Assert.Contains("Master branch keeps async greetings fresh", output);
         }
     }
 }
